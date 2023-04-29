@@ -14,10 +14,9 @@ import java.io.UnsupportedEncodingException;
 
 @Service
 @RequiredArgsConstructor
-public class GmailEmailService implements MailService{
+public class GmailEmailService implements EmailService {
 
 private static final Logger logger = LoggerFactory.getLogger(GmailEmailService.class);
-
 private final JavaMailSender mailSender;
 
 @Async
@@ -28,12 +27,13 @@ public void sendEmail(String to, String subject, String message){
     MimeMessageHelper helper = new MimeMessageHelper(mimeMessage, "utf-8");
 
     try{
-        helper.setFrom("simplycvia@gmail.com", "UImpact");
+        helper.setFrom("uimpact45@gmail.com", "UImpact");
         helper.setTo(to);
         helper.setSubject(subject);
         helper.setText(message, true);
 
         mailSender.send(mimeMessage);
+
     } catch(MessagingException | UnsupportedEncodingException e) {
         logger.error("An error occurred while sending an email to address : "
         + to + "; error: " + e.getMessage());

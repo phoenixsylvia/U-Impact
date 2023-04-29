@@ -1,7 +1,7 @@
 package com.phoenix.uimpact.service.impl;
 
 import com.phoenix.uimpact.Enum.Role;
-import com.phoenix.uimpact.configuration.mail.MailService;
+import com.phoenix.uimpact.configuration.mail.EmailService;
 import com.phoenix.uimpact.configuration.security.CustomUserDetailService;
 import com.phoenix.uimpact.configuration.security.JwtUtils;
 import com.phoenix.uimpact.dto.request.*;
@@ -37,7 +37,7 @@ public class UserServiceImpl implements UserService {
 
     private final JwtUtils jwtUtils;
 
-    private final MailService mailService;
+    private final EmailService mailService;
 
     private final AuthenticationManager authenticationManager;
 
