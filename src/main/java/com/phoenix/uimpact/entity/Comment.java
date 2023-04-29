@@ -1,2 +1,4 @@
-package com.phoenix.uimpact.entity;public class Comment {
+package com.phoenix.uimpact.entity;
+
+public class Comment {
 }

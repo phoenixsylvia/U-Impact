@@ -1,2 +1,4 @@
-package com.phoenix.uimpact.controller;public class CommentController {
+package com.phoenix.uimpact.controller;
+
+public class CommentController {
 }

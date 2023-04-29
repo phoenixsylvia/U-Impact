@@ -1,2 +1,4 @@
-package com.phoenix.uimpact.entity;public class Transaction {
+package com.phoenix.uimpact.entity;
+
+public class Transaction {
 }

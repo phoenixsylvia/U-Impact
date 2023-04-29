@@ -1,2 +1,4 @@
-package com.phoenix.uimpact.controller;public class TransferController {
+package com.phoenix.uimpact.controller;
+
+public class TransferController {
 }

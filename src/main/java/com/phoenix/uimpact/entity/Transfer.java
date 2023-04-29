@@ -1,2 +1,4 @@
-package com.phoenix.uimpact.entity;public class Transfer {
+package com.phoenix.uimpact.entity;
+
+public class Transfer {
 }
